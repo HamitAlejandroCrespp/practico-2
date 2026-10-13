@@ -1,0 +1,14 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float monto, total;
+    cout << "Ingrese el monto de la compra: "; cin >> monto;
+    if (monto > 100) {
+        total = monto - (monto * 0.10);
+        cout << "Aplica descuento. Total a pagar: " << total << " Bs" << endl;
+    } else {
+        total = monto;
+        cout << "No aplica descuento. Total a pagar: " << total << " Bs" << endl;
+    }
+    return 0;
+}
