@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+    string nombre, carrera;
+    int edad, semestre;
+    
+    cout << "Ingrese nombre completo: "; getline(cin, nombre);
+    cout << "Ingrese edad: "; cin >> edad;
+    cin.ignore(); // Limpiar el buffer antes del siguiente getline
+    cout << "Ingrese carrera: "; getline(cin, carrera);
+    cout << "Ingrese semestre: "; cin >> semestre;
+    
+    cout << "\n--- Datos del Estudiante ---" << endl;
+    cout << "Nombre: " << nombre << "\nEdad: " << edad << "\nCarrera: " << carrera << "\nSemestre: " << semestre << endl;
+    return 0;
+}
