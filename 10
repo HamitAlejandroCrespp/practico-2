@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int main() {
+    float horas, pago_hora, salario;
+    cout << "Ingrese horas trabajadas: "; cin >> horas;
+    cout << "Ingrese pago por hora: "; cin >> pago_hora;
+    
+    salario = horas * pago_hora;
+    
+    if (horas > 40) {
+        salario = salario + (salario * 0.10);
+        cout << "Recibe bono del 10%. ";
+    }
+    
+    cout << "El salario total es: " << salario << endl;
+    return 0;
+}
